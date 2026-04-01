@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: oklch(25.7% 0.09 281.288);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-img {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.logo-img img {
+   width: 100%;
+    max-width: 180px; 
+    display: block;
+}
+
+.login-title {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+#content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 2rem;
+}
+
+.shape {
+    background-color: oklch(26.2% 0.051 172.552);
+    width: 100%;
+    max-width: 400px;
+    padding: 3rem 2.5rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.input-box label {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.input-box input {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 1rem;
+    width: 100%;   
+}
+
+#links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.2rem;
+    gap: 1rem;
+}
+
+#links a {
+    color: #fff;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+#links a:hover {
+    text-decoration: underline;
+}
+
+footer {
+   background-color: oklch(26.2% 0.051 172.552);
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+#copyright {
+    color: #fff;
+    font-weight: 300;
+    font-size: 0.8rem;
+
+}
+
+.entrar-button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.entrar-button a {
+    text-decoration: none;
+    background-color: oklch(25.7% 0.09 281.288);
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    font-weight: 400;
+    text-align: center;
+    transition: 0.3s;
+    display: block;
+}
+
+.entrar-button a:hover {
+    background-color: oklch(43.2% 0.095 166.913);
+}
+
+@media screen and (max-width: 768px) {
+    .shape {
+        width: 85%;
+        padding: 2rem;
+        top: 50%;
+    }
+
+    .logo-img {
+        padding: 1.5rem 0;
+    }
+
+    .logo-img img {
+        max-width: 150px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .shape {
+        width: 92%;
+        padding: 1.5rem;
+    }
+
+    .login-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-height: 550px) {
+    .shape {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin: 2rem auto;
+    }
+    #content {
+        display: block;
+    }
+}
+
