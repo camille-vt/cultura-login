@@ -49,8 +49,7 @@ body {
 }
 
 .shape {
-    background-color: oklch(26.2% 0.051 172.552);
-    width: 100%;
+    background-color: oklch(43.2% 0.095 166.913);
     max-width: 400px;
     padding: 3rem 2.5rem;
     border-radius: 15px;
@@ -107,7 +106,7 @@ body {
 }
 
 footer {
-   background-color: oklch(26.2% 0.051 172.552);
+   background-color: oklch(43.2% 0.095 166.913);
     display: flex;
     justify-content: center;
     padding: 1rem 0;
@@ -140,7 +139,7 @@ footer {
 }
 
 .entrar-button a:hover {
-    background-color: oklch(43.2% 0.095 166.913);
+    background-color: oklch(35.9% 0.144 278.697);
 }
 
 @media screen and (max-width: 768px) {
@@ -182,4 +181,3 @@ footer {
         display: block;
     }
 }
-
